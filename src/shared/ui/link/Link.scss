@@ -1,0 +1,25 @@
+@import 'src/app/styles/global';
+
+.link {
+  box-sizing: border-box;
+  font-family: var(--font-family), sans-serif;
+  color: var(--link-text-colors);
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  cursor: pointer;
+  border: 0;
+  transition: background-color 0.25s;
+}
+
+.link::placeholder {
+  color: var(--text-placeholder-color);
+}
+
+.link:hover {
+  color: var(--link-text-color-hover);
+  transition: color 0.25s ease-in;
+}
