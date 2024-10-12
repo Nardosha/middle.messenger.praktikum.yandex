@@ -1,0 +1,46 @@
+@import 'src/app/styles/global';
+
+.input {
+  min-height: 48px;
+
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--primary-text-color);
+    display: block;
+    margin: 0 0 8px 0;
+  }
+
+  &__field {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 6px;
+    border: 1px solid var(--primary-border-color);
+    border-radius: 16px;
+    padding: 12px;
+    width: 360px;
+    height: 40px;
+    background: var(--primary-border-color);
+    transition: box-shadow 0.2s ease-in;
+
+    &:hover{
+      box-shadow: 0 0 2px 1px var(--border-hover);
+    }
+
+    &:focus{
+      background: var(--background-color-border-focus);
+      box-shadow: 0 0 2px 1px var(--border-hover);
+    }
+    &:focus::placeholder {
+      opacity: 0.4;
+    }
+  }
+
+
+
+}
