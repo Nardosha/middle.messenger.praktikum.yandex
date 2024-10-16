@@ -1,0 +1,18 @@
+{{#if isActive}}
+  <button class='icon-button {{buttonClass}} icon-button_state_active'>
+    <img
+      src='src/shared/ui/icons/{{src}}.svg'
+      alt='{{iconAlt}}'
+      class='icon-button__icon'
+    />
+  </button>
+
+{{else}}
+  <button class='icon-button {{buttonClass}}'>
+    <img
+      src='src/shared/ui/icons/{{src}}.svg'
+      alt='{{iconAlt}}'
+      class='icon-button__icon'
+    />
+  </button>
+{{/if}}
