@@ -3,22 +3,25 @@
   --second-family: "DM Sans", sans-serif;
   --third-family: "Inter", sans-serif;
 
-  --me-blue-50: #e9f4fa;
-  --me-blue-900: #121f24;
-  --neutral-20: #ededed;
-  --neutral-900: #0b0b0b;
+  --me-blue-50: #E9F4FA;
+  --me-blue-900: #121F24;
+  --neutral-20: #EDEDED;
+  --neutral-900: #0B0B0B;
   --tint-gray-25: rgba(26, 26, 26, 0.03);
   --primary-primary: var(--me-blue-800);
   --theme-colors-ui-2: var(--tint-gray-700);
-  --me-blue-700: #0f6488;
-  --neutral-200: #6e6e6e;
-  --neutral-400: #4e4e4e;
-  --accent: #068ac2;
-  --surface-primary-surface-0: #fff;
+  --me-blue-700: #0F6488;
+  --neutral-200: #6E6E6E;
+  --neutral-400: #4E4E4E;
+  --accent: #068AC2;
+  --surface-primary-surface-0: #FFF;
+  --surface-primary-surface-1: #F8F9FA;
+  --surface-primary-surface-2: #E1F2F8;
+  --avatar-color-1: #D3EAF4;
 
   --primary-border-color: var(--tint-gray-25);
   --primary-text-color: var(--me-blue-900);
-  --text-color-hover: var(--me-blue-900);
+  --text-color-hover: var(--neutral-900);
   --text-placeholder-color: var(--neutral-200);
   --link-text-colors: var(--me-blue-700);
   --link-text-color-hover: var(--accent);
@@ -27,11 +30,13 @@
   --button-primary-background-hover: var(--neutral-900);
   --border-hover: var(--neutral-200);
   --background-color-border-focus: var(--surface-primary-surface-0);
+  --theme-colors-border-2: var(--neutral-400);
+  --theme-colors-border-3: var(--neutral-300);
 
   --canvas: #f6f6f6;
 
-  --surface-primary-surface-1: #153f52;
-  --surface-primary-surface-2: #153f52;
+  //--surface-primary-surface-1: #153f52;
+  //--surface-primary-surface-2: #153f52;
   --surface-primary-surface-3: #153f52;
   --surface-primary-surface-4: #153f52;
   --surface-primary-surface-5: #153f52;
@@ -59,7 +64,6 @@
   --theme-colors-ui-3: var(--neutral-900);
   --theme-colors-ui-4: var(--tint-gray-600);
   --theme-colors-ui-inverse: var(--neutral-0);
-  --theme-colors-border-2: var(--neutral-400);
   --theme-colors-border-3: var(--neutral-300);
   --theme-colors-text-1: var(--primary-on-primary);
   --theme-colors-text-2: var(--neutral-60);
