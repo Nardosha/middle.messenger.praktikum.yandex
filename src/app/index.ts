@@ -18,7 +18,6 @@ import Pane from '../widgets/pane'
 import Chat from '../widgets/chat'
 import Sidebar from '../widgets/sidebar'
 import ConversationList from '../widgets/conversation-list'
-import Conversation from '../enteties/conversation'
 import BurgerButton from '../features/burger-button'
 
 Handlebars.registerPartial('RoundButton', RoundButton)
@@ -36,7 +35,6 @@ Handlebars.registerPartial('Sidebar', Sidebar)
 Handlebars.registerPartial('Pane', Pane)
 Handlebars.registerPartial('Chat', Chat)
 Handlebars.registerPartial('Banner', Banner)
-Handlebars.registerPartial('Conversation', Conversation)
 Handlebars.registerPartial('ConversationList', ConversationList)
 
 Handlebars.registerHelper("arr", (...args) => args.slice(0, -1))
