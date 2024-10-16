@@ -1,0 +1,36 @@
+.pane {
+  min-height: 100vh;
+  max-width: 400px;
+  min-width: 384px;
+  background-color: var(--surface-primary-surface-0);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+  }
+
+  &__add-chat-button {
+    border-radius: 50%;
+    background-color: var(--primary-border-color);
+    width: 44px;
+    height: 44px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 12px 24px;
+  }
+}

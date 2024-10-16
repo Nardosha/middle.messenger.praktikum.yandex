@@ -1,0 +1,17 @@
+<form class="register-form">
+  <div class="register-form__wrapper">
+  <header class="register-form__header">Sign up</header>
+    <div class="register-form__input-group">
+      {{>Input inputId="first_name_input" labelTitle="First name" placeholder="Enter your name" inputType="text"}}
+      {{>Input inputId="second_name_input" labelTitle="Second name" placeholder="Enter your second name" inputType="text"}}
+      {{>Input inputId="login_input" labelTitle="Logn" placeholder="Enter your login" inputType="text"}}
+      {{>Input inputId="phone_input" labelTitle="Phone number" placeholder="Enter your phone" inputType="phone"}}
+      {{>Input inputId="email_input" labelTitle="Email address" placeholder="Enter your email" inputType="email"}}
+      {{>Input inputId="password_input" labelTitle="Password" placeholder="Create a password"  inputType="password"}}
+    </div>
+
+  {{>RoundButton title="Get started" }}
+
+  <p class="register-form__actions">Already have an account? {{>Link text="Log in" }}</p>
+  </div>
+</form>
