@@ -1,0 +1,40 @@
+<section class='user-profile'>
+  <header class='user-profile__header'>
+    <div class="user-profile__header-top">
+      <img src="" alt="Background"/>
+    </div>
+
+    <div class="user-profile__header-bottom">
+      <div class='user-profile__avatar'>S</div>
+
+    <div class='user-profile__header-info'>
+      <div class='user-profile__user-info'>
+        <div class='user-profile__user-name'>Sylvia Reyes</div>
+
+        <div class='user-profile__user-phone'>+44656548060</div>
+      </div>
+
+      <button class='user-profile__logout-button'>logout</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="user-profile__content">
+
+  <ul class='user-profile__tabs'>
+    <li class='user-profile__tab'>General</li>
+    <li class='user-profile__tab'>Security</li>
+  </ul>
+
+  <div class='user-profile__tabs-content'>
+    <h2 class='user-profile__tab-title'>General</h2>
+
+    {{>Input inputId="first_name" labelTitle="First name" inputValue="Sylvia" inputType="text"}}
+    {{>Input inputId="second_name" labelTitle="Second name" inputValue="Reyes" inputType="text"}}
+    {{>Input inputId="display_name" labelTitle="Display name" inputValue="Sylvia Reyes" inputType="text"}}
+    {{>Input inputId="login" labelTitle="Login" inputValue="reyessylvia" inputType="text"}}
+    {{>Input inputId="phone" labelTitle="Phone number" inputValue="+44656548060" inputType="phone"}}
+    {{>Input inputId="email" labelTitle="Email" inputValue="reyessylvia@gmail.com" inputType="email"}}
+  </div>
+  </main>
+</section>
