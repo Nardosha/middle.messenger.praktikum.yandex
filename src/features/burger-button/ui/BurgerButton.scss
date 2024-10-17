@@ -1,3 +1,115 @@
-.burger-button {
+//bugrer-button_state_active
 
+.bugrer-button {
+  background-color: transparent;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 16px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.bugrer-button {
+  &__top,
+  &__middle,
+  &__bottom {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 3px;
+    background: var(--primary-text-color);
+    transition: transform 0.3s;
+  }
+
+  &__top {
+    top: 0;
+  }
+  &__middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__bottom {
+    top: 100%;
+    transform: translate(0, -100%);
+  }
+}
+
+.bugrer-button__middle {
+  //&::before,
+  //&::after {
+  //  content: '';
+  //  background: var(--primary-text-color);
+  //  position: absolute;
+  //  display: block;
+  //  left: 0;
+  //  height: 4px;
+  //  width: 15px;
+  //}
+  //
+  //&::before {
+  //  top: -17px;
+  //  transform-origin: top right;
+  //  transition:
+  //    transform 0.3s,
+  //    width 0.3s,
+  //    top 0.3s;
+  //}
+  //
+  //&::after {
+  //  bottom: -17px;
+  //  transform-origin: bottom right;
+  //  transition:
+  //    transform 0.3s,
+  //    width 0.3s,
+  //    bottom 0.3s;
+  //}
+}
+
+.bugrer-button_state_active {
+  .bugrer-button__top,
+  .bugrer-button__bottom {
+    width: 17px;
+  }
+
+  .bugrer-button__middle {
+    width: 12px;
+    //transform: rotate(180deg);
+
+    &::before,
+    &::after {
+      content: '';
+      background: var(--primary-text-color);
+      position: absolute;
+      display: block;
+      left: 0;
+      height: 3px;
+      width: 8px;
+      //width: 50%;
+    }
+
+    &::before {
+      top: 0;
+      transform: translateX(14px) translateY(2px) rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: translateX(14px) translateY(-2px) rotate(-45deg);
+    }
+  }
 }
