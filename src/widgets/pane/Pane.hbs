@@ -1,0 +1,11 @@
+<section class="pane">
+  <header class="pane__header">
+    <h1 class="pane__title">Chats</h1>
+    {{>IconButton src="Plus" alt="IconPlus" buttonClass="pane__add-chat-button"}}
+  </header>
+<div class="pane__content">
+  {{>Search searchId="searchChat" labelTitle="Label" placeholder="Search here..." inputType="text"}}
+
+  {{>ConversationList people='{"people":["Nils","Yehuda"],"cities":["Darmstadt","San Francisco"]}' }}
+</div>
+</section>

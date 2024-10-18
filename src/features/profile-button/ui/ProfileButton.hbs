@@ -1,0 +1,8 @@
+{{#if avatarUrl}}
+  <button class="profile-button {{buttonClass}}">
+    <img src="{{{avatarUrl}}}" alt="Avatar" class="profile-button__image"/>
+  </button>
+
+{{else}}
+  <button class="profile-button {{buttonClass}}">{{nameWords}}</button>
+{{/if}}

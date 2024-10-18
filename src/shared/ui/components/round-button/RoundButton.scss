@@ -1,0 +1,25 @@
+.round-button {
+  box-sizing: border-box;
+  font-family: var(--font-family), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--button-primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-primary-background);
+  border-radius: 24px;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  min-height: 43px;
+  padding: 12px 10px;
+  transition: background-color 0.25s;
+}
+
+.round-button:hover {
+  background-color: var(--button-primary-background-hover);
+  color: var(--me-blue-50);
+  transition: background-color, color 0.25s ease-in;
+}
