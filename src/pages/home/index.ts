@@ -1,3 +1,3 @@
-import './ui/home.scss'
-import Home from './ui/home.hbs?raw'
+import './ui/Home.scss'
+import Home from './ui/Home.hbs?raw'
 export default Home
