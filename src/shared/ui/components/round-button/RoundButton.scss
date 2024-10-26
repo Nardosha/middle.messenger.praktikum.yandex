@@ -21,5 +21,7 @@
 .round-button:hover {
   background-color: var(--button-primary-background-hover);
   color: var(--me-blue-50);
-  transition: background-color, color 0.25s ease-in;
+  transition:
+    background-color,
+    color 0.25s ease-in;
 }
