@@ -79,4 +79,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     root.innerHTML = result
   }
+
+  if (window.location.pathname === '/not-found') {
+    const template = Handlebars.compile(Pages.PageNotFound)
+    const result = template({})
+
+    if (!root) return
+
+    root.innerHTML = result
+  }
+
+  if (window.location.pathname === '/server-error') {
+    const template = Handlebars.compile(Pages.PageServerError)
+    const result = template({})
+
+    if (!root) return
+
+    root.innerHTML = result
+  }
 })
