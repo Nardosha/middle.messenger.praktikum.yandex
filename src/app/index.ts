@@ -43,10 +43,40 @@ Handlebars.registerHelper('arr', (...args) => args.slice(0, -1))
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('app')
-  const template = Handlebars.compile(Pages.Profile)
-  const result = template({})
 
-  if (!root) return
+  if (window.location.pathname === '/login') {
+    const template = Handlebars.compile(Pages.Login)
+    const result = template({})
 
-  root.innerHTML = result
+    if (!root) return
+
+    root.innerHTML = result
+  }
+
+  if (window.location.pathname === '/register') {
+    const template = Handlebars.compile(Pages.Register)
+    const result = template({})
+
+    if (!root) return
+
+    root.innerHTML = result
+  }
+
+  if (window.location.pathname === '/home') {
+    const template = Handlebars.compile(Pages.Home)
+    const result = template({})
+
+    if (!root) return
+
+    root.innerHTML = result
+  }
+
+  if (window.location.pathname === '/profile') {
+    const template = Handlebars.compile(Pages.Profile)
+    const result = template({})
+
+    if (!root) return
+
+    root.innerHTML = result
+  }
 })
