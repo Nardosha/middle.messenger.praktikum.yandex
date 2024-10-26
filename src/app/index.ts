@@ -4,7 +4,6 @@ import './ui/app.scss'
 
 import Handlebars from 'handlebars'
 import RoundButton from '../shared/ui/components/round-button'
-import Button from '../shared/ui/components/button'
 import Input from '../shared/ui/components/input'
 import Link from '../shared/ui/components/link'
 import Search from '../shared/ui/components/search'
@@ -22,7 +21,6 @@ import UserProfile from '../widgets/user-profile'
 import BurgerButton from '../features/burger-button'
 
 Handlebars.registerPartial('RoundButton', RoundButton)
-Handlebars.registerPartial('Button', Button)
 Handlebars.registerPartial('Input', Input)
 Handlebars.registerPartial('LoginForm', LoginForm)
 Handlebars.registerPartial('RegisterForm', RegisterForm)
