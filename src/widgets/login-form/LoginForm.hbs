@@ -1,13 +1,17 @@
 <form class="login-form">
   <div class="login-form__wrapper">
-  <header class="login-form__header">Sign in</header>
+    <header class="login-form__header">Sign in</header>
     <div class="login-form__input-group">
-      {{>Input inputId="email_input" labelTitle="Email address" inputValue="user@mercure.studio" inputType="email" inputName="login"}}
-      {{>Input inputId="password_input" labelTitle="Password" inputValue="*************" inputType="password" inputName="password"}}
+      {{>Input inputId="email_input" labelTitle="Email address"
+      inputValue="user@mercure.studio" inputType="email" inputName="login"}}
+      {{>Input inputId="password_input" labelTitle="Password"
+      inputValue="*************" inputType="password" inputName="password"}}
     </div>
 
-  {{>RoundButton title="Sign in" }}
+    {{>RoundButton title="Sign in" }}
 
-  <p class="login-form__actions">Don’t have an account? {{>Link text="Sign up" }}</p>
+    <p class="login-form__actions">
+      Don’t have an account? {{>Link text="Sign up" }}
+    </p>
   </div>
 </form>

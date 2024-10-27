@@ -8,12 +8,16 @@
   </head>
   <body>
     <div id="app" class="app">
-      <a href="/login">Login</a>
-      <a href="/register">Register</a>
-      <a href="/home">Home</a>
-      <a href="/profile">Profile</a>
-      <a href="/not-found">Page not found</a>
-      <a href="/server-error">Page server error</a>
+      <nav class="app__navigation">
+        <a href="/login" class="app__navigation-item">Login</a>
+        <a href="/register" class="app__navigation-item">Register</a>
+        <a href="/home" class="app__navigation-item">Home</a>
+        <a href="/profile" class="app__navigation-item">Profile</a>
+        <a href="/not-found" class="app__navigation-item">Page not found</a>
+        <a href="/server-error" class="app__navigation-item"
+          >Page server error</a
+        >
+      </nav>
     </div>
     <script type="module" src="src/index.ts"></script>
   </body>

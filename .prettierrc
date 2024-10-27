@@ -9,7 +9,7 @@
   "importOrderSortSpecifiers": true,
   "overrides": [
     {
-      "files": "*.svg",
+      "files": "*.{hbs,svg}",
       "options": {
         "parser": "html",
         "htmlWhitespaceSensitivity": "ignore"
