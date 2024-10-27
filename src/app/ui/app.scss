@@ -10,4 +10,20 @@
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__navigation-item {
+    color: var(--link-text-colors);
+  }
+
+  &__navigation-item:hover {
+    color: var(--link-text-color-hover);
+    transition: color 0.25s ease-in;
+  }
 }
