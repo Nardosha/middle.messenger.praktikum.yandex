@@ -110,13 +110,10 @@ document.addEventListener('DOMContentLoaded', detectAdBlocker)
 
 function detectAdBlocker() {
   setTimeout(() => {
-
     console.log('detectAdBlocker started')
     const affiliateElement = document.querySelector('.affiliate')
-
     if (!affiliateElement) {
-      console.log('AD BLOCKER DETECTED')
-      location.href = '/server-error'
+      console.log(22)
       return
     }
 
