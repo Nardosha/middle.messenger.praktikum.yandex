@@ -1,0 +1,71 @@
+<section class="user-profile">
+  <header class="user-profile__header">
+    <div class="user-profile__header-bottom">
+      <div class="user-profile__avatar">S</div>
+
+      <div class="user-profile__header-info">
+        <div class="user-profile__user-info">
+          <div class="user-profile__user-name">Sylvia Reyes</div>
+
+          <div class="user-profile__user-phone">+44656548060</div>
+        </div>
+
+        <a class="user-profile__logout-button">Log out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="user-profile__content">
+    <ul class="user-profile__tabs">
+      <li class="user-profile__tab">
+        {{>IconButton text="General" buttonClass="user-profile__tab-button"
+        isActive="true"}}
+      </li>
+
+      <li class="user-profile__tab">
+        {{>IconButton text="Security" buttonClass="user-profile__tab-button"}}
+      </li>
+    </ul>
+
+    <div class="user-profile__tabs-content">
+      <h2 class="user-profile__tab-title">General</h2>
+      <form action="#" class="user-profile__form">
+        <ul class="user-profile__input-list">
+          <li class="user-profile__list-item">
+            {{>Input inputId="first_name" labelTitle="First name"
+            inputValue="Sylvia" inputName="first_name" inputType="text"
+            className="user-profile__input"}}
+          </li>
+
+          <li class="user-profile__list-item">
+            {{>Input inputId="second_name" labelTitle="Second name"
+            inputValue="Reyes" inputName="second_name" inputType="text"
+            className="user-profile__input"}}
+          </li>
+          <li class="user-profile__list-item">
+            {{>Input inputId="display_name" labelTitle="Display name"
+            inputValue="Sylvia Reyes" inputName="display_name" inputType="text"
+            className="user-profile__input"}}
+          </li>
+
+          <li class="user-profile__list-item">
+            {{>Input inputId="login" labelTitle="Login" inputValue="reyessylvia"
+            inputName="login" inputType="text" className="user-profile__input"}}
+          </li>
+
+          <li class="user-profile__list-item">
+            {{>Input inputId="phone" labelTitle="Phone number"
+            inputValue="+44656548060" inputName="phone" inputType="phone"
+            className="user-profile__input"}}
+          </li>
+
+          <li class="user-profile__list-item">
+            {{>Input inputId="email" labelTitle="Email"
+            inputValue="reyessylvia@gmail.com" inputName="email"
+            inputType="email" className="user-profile__input"}}
+          </li>
+        </ul>
+      </form>
+    </div>
+  </main>
+</section>
