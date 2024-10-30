@@ -121,7 +121,8 @@ function detectAdBlocker() {
 
     if (affiliateAdStyles.display === 'none') {
       console.log('AD BLOCKER DETECTED')
-      location.href = '/server-error'
+      console.log('Go to error page')
+      // location.href = '/server-error'
     } else {
       console.log('NO AD BLOCKER')
     }
