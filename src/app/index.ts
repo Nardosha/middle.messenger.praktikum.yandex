@@ -95,4 +95,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     root.innerHTML = result
   }
+
+  if (window.location.pathname === '/affiliate') {
+    const template = Handlebars.compile(Pages.Affiliate)
+    const result = template({})
+
+    if (!root) return
+
+    root.innerHTML = result
+  }
 })
+
+document.addEventListener('DOMContentLoaded', detectAdBlocker)
+
+function detectAdBlocker() {
+  setTimeout(() => {
+
+    console.log('detectAdBlocker started')
+    const el = document.getElementById('ad-test')
+
+    if (!el) return
+    el.innerHTML = `<div id="second-ad" class="absbygoogle"></div>`
+    const secondAd = document.querySelector('#second-ad')
+    const testAdStyles = window.getComputedStyle(secondAd)
+
+    if (testAdStyles.display === 'none') {
+      console.log('AD BLOCKER DETECTED')
+      location.href = '/server-error'
+    } else {
+      console.log('NO AD BLOCKER')
+    }
+  }, 1000)
+}
