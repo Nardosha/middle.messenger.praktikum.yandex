@@ -112,21 +112,17 @@ function detectAdBlocker() {
   setTimeout(() => {
 
     console.log('detectAdBlocker started')
-    const el = document.getElementById('ad-test')
     const affiliateElement = document.querySelector('.affiliate')
 
-    if (!el || !affiliateElement) {
+    if (!affiliateElement) {
       console.log('AD BLOCKER DETECTED')
       location.href = '/server-error'
       return
     }
 
-    el.innerHTML = `<div id="second-ad" class="absbygoogle"></div>`
-    const secondAd = document.querySelector('#second-ad')
-    if (!secondAd) return
-    const testAdStyles = window.getComputedStyle(secondAd)
+    const affiliateAdStyles = window.getComputedStyle(affiliateElement)
 
-    if (testAdStyles.display === 'none') {
+    if (affiliateAdStyles.display === 'none') {
       console.log('AD BLOCKER DETECTED')
       location.href = '/server-error'
     } else {
