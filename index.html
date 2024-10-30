@@ -9,14 +9,28 @@
   <body>
     <div id="app" class="app">
       <nav class="app__navigation">
-        <a href="/login" class="app__navigation-item">Login</a>
-        <a href="/register" class="app__navigation-item">Register</a>
-        <a href="/home" class="app__navigation-item">Home</a>
-        <a href="/profile" class="app__navigation-item">Profile</a>
-        <a href="/not-found" class="app__navigation-item">Page not found</a>
-        <a href="/server-error" class="app__navigation-item"
-          >Page server error</a
-        >
+        <ul class="app__navigation-list">
+          <li class="app__navigation-item">
+            <a class="app__navigation-link" href="/login">Login</a>
+          </li>
+          <li><a class="app__navigation-link" href="/register">Register</a></li>
+          <li><a class="app__navigation-link" href="/home">Home</a></li>
+          <li><a class="app__navigation-link" href="/profile">Profile</a></li>
+          <li>
+            <a class="app__navigation-link" href="/not-found">Page not found</a>
+          </li>
+          <li>
+            <a class="app__navigation-link" href="/server-error"
+              >Page server error</a
+            >
+          </li>
+
+          <li>
+            <a class="app__navigation-link" href="/affiliate"
+              >Affiliate</a
+            >
+          </li>
+        </ul>
       </nav>
     </div>
     <script type="module" src="src/index.ts"></script>
