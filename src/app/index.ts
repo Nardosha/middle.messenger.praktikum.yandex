@@ -117,6 +117,7 @@ function detectAdBlocker() {
     if (!el) return
     el.innerHTML = `<div id="second-ad" class="absbygoogle"></div>`
     const secondAd = document.querySelector('#second-ad')
+    if (!secondAd) return
     const testAdStyles = window.getComputedStyle(secondAd)
 
     if (testAdStyles.display === 'none') {
